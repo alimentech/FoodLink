@@ -51,6 +51,38 @@ GO
 
 Esta consulta nos servirá para obtener los datos que mostraremos a los usuarios en la aplicación.
 
+## 5. Predicción de compras del cliente con Machine Learning Studio
+1. Ir a [Azure Machine Learning Studio](https://studio.azureml.net/) e iniciar sesión
+2. En Proyects crear un nuevo proyecto con el nombre "Predicciones de compras Alimentech" y descripción "Proyecto de Machine Learning para predecir los productos que comprarán los clientes en el supermercado".
+3. Ir a experiments y crear un experimento nuevo.
+4. Abrir el menú de Data Input and Output y arrastrar Import Data al área de trabajo. Llenar el menú de la izquierda con las siguientes opciones:
+* Data Source: Azure SQL Database
+* Database Server name: alimentechsql.database.windows.net
+* Database name: AlimentechDB
+* (Llenar username y password con las credenciales de la base de datos)
+* Database Query:
+```
+SELECT Product, ClientID FROM [dbo].[Orders]
+```
+5. Abrir el menú de Data Transformations, Sample and Split y arrastrar Split Data al área de trabajo.
+6. Conectar Input Data con Split Data
+7. Abrir el menú de Machine Learning, Initialize Model, Regression y arrastrar Linear Regression al área de trabajo.
+8. En el menú de Machine Learning, abrir Train y arrastrar Train Model al área de trabajo.
+9. Conectar Split Data y Linear Regression a Train Model.
+10. En el menú de Machine Learning, abrir Score y arrastrar Score Model al área de trabajo.
+11. Conectar Split Data y Train Model a Score Model.
+12. En el menú de Machine Learning, abrir Evaluate y arrastrar Evaluate Model al área de trabajo.
+13. Conectar Score Model a Evaluate Model.
+14. Correr modelo
+15. En Set up web service, seleccionar Predictive Web Service
+16. Correr modelo
+17. Seleccionar la opción Deploy web service
+18. Ir a Web services y seleccionar el modelo de predicción.
+19. Hacer click en Test y llenar datos para predecir.
+20. Se devuelve un archivo JSON con la evaluación y puntuación de la predicción.
+
+El URL para entrar a nuestro modelo de predicciónd de Machine Learning Studio es: [https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true](https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true)
+
 ## Demo
 
 [link de la aplicación]
