@@ -45,6 +45,8 @@ FROM [dbo].[Orders] INNER JOIN [dbo].[Category]
 GO
 ```
 
+Esta consulta nos servirá para obtener los datos que mostraremos a los usuarios en la aplicación
+
 ## Demo
 
 [link de la aplicación]
