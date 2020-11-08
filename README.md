@@ -14,9 +14,22 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 [Base de datos de Alimentech](https://github.com/alimentech/FoodLink/blob/main/Base%20de%20datos%20AlimenTech.accdb)
 
 ### 2. Creación de recursos Azure SQL Server y Azure SQL Database
-1. Creación de 
-3. Migración de base de datos de Access a Azure SQL Server
-4. Escribir Consulta (Query) para obtener fecha de caducidad, productos comprados, cantidad y fecha de compra.
+1. Ir a [Azure Portal](portal.azure.com)
+2. Crear recurso de SQL Database. Llenamos los datos solicitados de la siguiente manera:
+Suscripción: Azure para estudiantes
+Grupo de recursos: alimentech-rg (nuevo)
+Nombre: AlimentechDB
+Servidor: Crear nuevo:
+  Nombre: alimentechsql
+  (Se agregan credenciales de cuenta de inicio de sesión y contraseña)
+  Ubicación: Centro-Sur de EE.UU.
+Proceso y Almacenamiento: Básico
+3. Una vez creado el recurso, ir a este y seleccionar la opción "Establecer el Firewall del Servidor"
+4. Al Agregar IP del cliente se agrega automáticamente la dirección IP del usuario. De esta manera, se podrá ingresar a la base de datos creada con las credenciales establecidas al crear el servidor de SQL.
+
+### 3. Migración de base de datos de Access a Azure SQL Server
+
+### 4. Escribir Consulta (Query) para obtener fecha de caducidad, productos comprados, cantidad y fecha de compra.
 5.
 
 ## Demo
