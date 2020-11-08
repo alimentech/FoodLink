@@ -31,7 +31,7 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 1. Descargar SQL Migration Assistant for Access, installar y abrir el programa
 2. Crear un nuevo proyecto de migración
 3. Añadir base de datos creada en el punto 1. Creación de base de datos de prueba en Access.
-4. Conectar a SQL Server insertando los datos del nombre del servidor (alimentechsql.database.windows.net), base de datos (AlimentechDB) y credenciales de inicio de sesión y contraseña
+4. Conectar a SQL Server insertando los datos del nombre del servidor ([alimentechsql.database.windows.net](alimentechsql.database.windows.net), base de datos (AlimentechDB) y credenciales de inicio de sesión y contraseña
 5. Seguir instrucciones del asistente para migrar la base de datos
 6. Ir a recurso de base de datos (AlimentechDB) en Azure Portal
 7. Ir al editor de consultas, iniciar sesión y verificar que todas las tablas y columnas del archivo de Access se hayan migrado exitosamente a la base de datos.
