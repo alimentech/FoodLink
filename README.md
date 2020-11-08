@@ -89,7 +89,4 @@ El URL para utilizar nuestro modelo de predicción de Machine Learning Studio es
 2. Crear un nuevo proyecto y una nueva aplicación.
 3. Importar base de datos.
 4. Añadir pantallas y funciones.
-
-## Demo de App Móvil
-
-[link de la aplicación]
+5. Publicar aplicación FoodLink
