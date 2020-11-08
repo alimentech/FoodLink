@@ -80,8 +80,9 @@ SELECT Product, ClientID FROM [dbo].[Orders]
 18. Ir a Web services y seleccionar el modelo de predicción.
 19. Hacer click en Test y llenar datos para predecir.
 20. Se devuelve un archivo JSON con la evaluación y puntuación de la predicción.
+21. Guardar clave API del servicio para usar en aplicación
 
-El URL para entrar a nuestro modelo de predicciónd de Machine Learning Studio es: [https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true](https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true)
+El URL para entrar a nuestro modelo de predicción de Machine Learning Studio es: [https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true](https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true)
 
 ## Demo
 
