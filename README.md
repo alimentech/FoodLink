@@ -82,7 +82,7 @@ SELECT Product, ClientID FROM [dbo].[Orders]
 20. Se devuelve un archivo JSON con la evaluación y puntuación de la predicción.
 21. Guardar clave API del servicio para usar en aplicación
 
-El URL para entrar a nuestro modelo de predicción de Machine Learning Studio es: [https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true](https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true)
+El URL para utilizar nuestro modelo de predicción de Machine Learning Studio es: [https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true](https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true)
 
 ### 6. Creación de App Móvil con AppHive
 1. Ir al sitio web de [AppHive](https://apphive.io/es) e iniciar sesión
