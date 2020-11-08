@@ -51,7 +51,7 @@ GO
 
 Esta consulta nos servirá para obtener los datos que mostraremos a los usuarios en la aplicación.
 
-## 5. Predicción de compras del cliente con Machine Learning Studio
+### 5. Predicción de compras del cliente con Machine Learning Studio
 1. Ir a [Azure Machine Learning Studio](https://studio.azureml.net/) e iniciar sesión
 2. En Proyects crear un nuevo proyecto con el nombre "Predicciones de compras Alimentech" y descripción "Proyecto de Machine Learning para predecir los productos que comprarán los clientes en el supermercado".
 3. Ir a experiments y crear un experimento nuevo.
@@ -84,6 +84,11 @@ SELECT Product, ClientID FROM [dbo].[Orders]
 
 El URL para entrar a nuestro modelo de predicción de Machine Learning Studio es: [https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true](https://ussouthcentral.services.azureml.net/workspaces/693dc0cde7d245cb8e587c26f5163f41/services/61d04666fb3d4f9ca86bcbd23eb1317d/execute?api-version=2.0&details=true)
 
-## Demo
+### 6. Creación de App Móvil con AppHive
+1. Ir al sitio web de [AppHive](https://apphive.io/es) e iniciar sesión
+2. Crear un nuevo proyecto y una nueva aplicación.
+3. Añadir pantallas y funciones.
+
+## Demo de App Móvil
 
 [link de la aplicación]
