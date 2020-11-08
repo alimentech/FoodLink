@@ -33,8 +33,8 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 3. Añadir base de datos creada en el punto 1. Creación de base de datos de prueba en Access.
 4. Conectar a SQL Server insertando los datos del nombre del servidor (alimentechsql.database.windows.net), base de datos (AlimentechDB) y credenciales de inicio de sesión y contraseña
 5. Seguir instrucciones del asistente para migrar la base de datos
-6. Ir a recurso de base de datos en Azure (AlimentechDB
-7. Ir a editor de consultas y verificar que todas las tablas y columnas del archivo de Access se hayan migrado exitosamente a la base de datos.
+6. Ir a recurso de base de datos (AlimentechDB) en Azure Portal
+7. Ir al editor de consultas, iniciar sesión y verificar que todas las tablas y columnas del archivo de Access se hayan migrado exitosamente a la base de datos.
 
 ### 4. Escribir Consulta (Query) para obtener fecha de caducidad, productos comprados, cantidad y fecha de compra.
 1. Escribir consulta utilizando INNER JOIN:
@@ -44,8 +44,12 @@ FROM [dbo].[Orders] INNER JOIN [dbo].[Category]
     ON ([dbo].[Orders].[CategoryID] = [dbo].[Category].[CategoryID])
 GO
 ```
+2. Ir a recurso de base de datos (AlimentechDB) en Azure Portal
+3. Ir al editor de consultas, iniciar sesión e insertar consulta anterior.
+4. Ejecutar consulta y verificar en los resultados que estén los datos que solicitamos (producto, fecha de compra, días para expiración)
+5. Guardar consulta en archivo .sql
 
-Esta consulta nos servirá para obtener los datos que mostraremos a los usuarios en la aplicación
+Esta consulta nos servirá para obtener los datos que mostraremos a los usuarios en la aplicación.
 
 ## Demo
 
