@@ -11,7 +11,7 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 ### 1. Creación de base de datos de prueba en Access
 1. Crear una base de datos nueva en Access y llenarla con datos como en el siguiente archivo:
 
-[Base de datos de Alimentech](https://github.com/AbigailTorresC/alimentech/blob/main/Base%20de%20datos%20AlimenTech.accdb)
+[Base de datos de Alimentech](https://github.com/alimentech/FoodLink/blob/main/Base%20de%20datos%20AlimenTech.accdb)
 
 ### 2. Creación de recursos Azure SQL Server y Azure SQL Database
 1. Creación de 
