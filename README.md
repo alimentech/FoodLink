@@ -87,7 +87,8 @@ El URL para utilizar nuestro modelo de predicción de Machine Learning Studio es
 ### 6. Creación de App Móvil con AppHive
 1. Ir al sitio web de [AppHive](https://apphive.io/es) e iniciar sesión
 2. Crear un nuevo proyecto y una nueva aplicación.
-3. Añadir pantallas y funciones.
+3. Importar base de datos.
+4. Añadir pantallas y funciones.
 
 ## Demo de App Móvil
 
