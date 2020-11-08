@@ -19,7 +19,7 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 * Suscripción: Azure para estudiantes
 * Grupo de recursos: alimentech-rg (nuevo)
 * Nombre: AlimentechDB
-  * Servidor: Crear nuevo:
+* Servidor: Crear nuevo:
   * Nombre: alimentechsql
   * (Se agregan credenciales de cuenta de inicio de sesión y contraseña)
   * Ubicación: Centro-Sur de EE.UU.
@@ -28,9 +28,22 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 4. Al Agregar IP del cliente se agrega automáticamente la dirección IP del usuario. De esta manera, se podrá ingresar a la base de datos creada con las credenciales establecidas al crear el servidor de SQL.
 
 ### 3. Migración de base de datos de Access a Azure SQL Server
+1. Descargar SQL Migration Assistant for Access, installar y abrir el programa
+2. Crear un nuevo proyecto de migración
+3. Añadir base de datos creada en el punto 1. Creación de base de datos de prueba en Access.
+4. Conectar a SQL Server insertando los datos del nombre del servidor (alimentechsql.database.windows.net), base de datos (AlimentechDB) y credenciales de inicio de sesión y contraseña
+5. Seguir instrucciones del asistente para migrar la base de datos
+6. Ir a recurso de base de datos en Azure (AlimentechDB
+7. Ir a editor de consultas y verificar que todas las tablas y columnas del archivo de Access se hayan migrado exitosamente a la base de datos.
 
 ### 4. Escribir Consulta (Query) para obtener fecha de caducidad, productos comprados, cantidad y fecha de compra.
-5.
+1. Escribir consulta utilizando INNER JOIN:
+```
+SELECT [Product], [OrderDate], [AlertDaysBeforeExp]
+FROM [dbo].[Orders] INNER JOIN [dbo].[Category]
+    ON ([dbo].[Orders].[CategoryID] = [dbo].[Category].[CategoryID])
+GO
+```
 
 ## Demo
 
