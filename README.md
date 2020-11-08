@@ -14,7 +14,7 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 [Base de datos de Alimentech](https://github.com/alimentech/FoodLink/blob/main/Base%20de%20datos%20AlimenTech.accdb)
 
 ### 2. Creación de recursos Azure SQL Server y Azure SQL Database
-1. Ir a [Azure Portal](portal.azure.com)
+1. Ir a [Azure Portal](https://portal.azure.com)
 2. Crear recurso de SQL Database. Llenamos los datos solicitados de la siguiente manera:
 * Suscripción: Azure para estudiantes
 * Grupo de recursos: alimentech-rg (nuevo)
@@ -31,7 +31,7 @@ La aplicación también recolecta información sobre las compras del usuario, pa
 1. Descargar SQL Migration Assistant for Access, installar y abrir el programa
 2. Crear un nuevo proyecto de migración
 3. Añadir base de datos creada en el punto 1. Creación de base de datos de prueba en Access.
-4. Conectar a SQL Server insertando los datos del nombre del servidor ([alimentechsql.database.windows.net](alimentechsql.database.windows.net), base de datos (AlimentechDB) y credenciales de inicio de sesión y contraseña
+4. Conectar a SQL Server insertando los datos del nombre del servidor ([alimentechsql.database.windows.net](https://alimentechsql.database.windows.net), base de datos (AlimentechDB) y credenciales de inicio de sesión y contraseña
 5. Seguir instrucciones del asistente para migrar la base de datos
 6. Ir a recurso de base de datos (AlimentechDB) en Azure Portal
 7. Ir al editor de consultas, iniciar sesión y verificar que todas las tablas y columnas del archivo de Access se hayan migrado exitosamente a la base de datos.
